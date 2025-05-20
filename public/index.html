@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Sanchez - Marketing Manager</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .sidebar {
+            background: #223046;
+            color: #fff;
+            width: 280px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: #ccc;
+            margin-bottom: 24px;
+        }
+        .sidebar h2 {
+            font-size: 1.1em;
+            margin: 32px 0 12px 0;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #fff2;
+            padding-bottom: 4px;
+            width: 100%;
+            text-align: left;
+        }
+        .sidebar ul, .sidebar li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+            font-size: 0.98em;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar li i {
+            margin-right: 10px;
+            width: 18px;
+            text-align: center;
+        }
+        .sidebar .section {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        .sidebar .skills, .sidebar .languages {
+            margin-bottom: 0;
+        }
+        .sidebar .skills li, .sidebar .languages li {
+            margin-bottom: 6px;
+        }
+        .main {
+            flex: 1;
+            padding: 36px 40px 36px 40px;
+        }
+        .main h1 {
+            font-size: 2.1em;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .main h1 span {
+            color: #2b7bb9;
+            font-weight: 400;
+        }
+        .main .title {
+            color: #888;
+            font-size: 1.1em;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            margin: 32px 0 10px 0;
+            color: #223046;
+        }
+        .profile {
+            font-size: 1em;
+            color: #444;
+            margin-bottom: 18px;
+        }
+        .work-experience {
+            margin-bottom: 24px;
+        }
+        .job {
+            margin-bottom: 18px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .job-title {
+            font-weight: 600;
+            color: #223046;
+        }
+        .job-company {
+            font-size: 1em;
+            color: #2b7bb9;
+        }
+        .job-dates {
+            font-size: 0.98em;
+            color: #888;
+        }
+        .job ul {
+            margin: 8px 0 0 18px;
+            padding: 0;
+            color: #444;
+            font-size: 0.98em;
+        }
+        .references {
+            display: flex;
+            gap: 40px;
+            margin-top: 18px;
+        }
+        .reference {
+            font-size: 0.97em;
+        }
+        .reference .ref-name {
+            font-weight: 600;
+            color: #223046;
+        }
+        .reference .ref-title {
+            color: #888;
+            font-size: 0.97em;
+        }
+        .reference .ref-contact {
+            font-size: 0.96em;
+            color: #444;
+        }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; flex-direction: row; justify-content: space-around; padding: 24px 8px; }
+            .main { padding: 24px 16px; }
+        }
+    </style>
+    <!-- You can add FontAwesome or similar for icons if desired -->
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="avatar"></div>
+            <div class="section">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li><i>📞</i> +123-456-7890</li>
+                    <li><i>✉️</i> hello@reallygreatsite.com</li>
+                    <li><i>📍</i> 123 Anywhere St., Any City</li>
+                    <li><i>🌐</i> reallygreatsite.com</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <ul>
+                    <li>
+                        <strong>2029 - 2030</strong><br>
+                        WARDIERE UNIVERSITY<br>
+                        Master of Business Management
+                    </li>
+                    <li style="margin-top:10px;">
+                        <strong>2025 - 2029</strong><br>
+                        WARDIERE UNIVERSITY<br>
+                        Bachelor of Business<br>
+                        GPA: 3.8 / 4.0
+                    </li>
+                </ul>
+            </div>
+            <div class="section skills">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Public Relations</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Leadership</li>
+                    <li>Effective Communication</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+            <div class="section languages">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>French (Fluent)</li>
+                    <li>German (Basic)</li>
+                    <li>Spanish (Intermediate)</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main">
+            <h1>RICHARD <span>SANCHEZ</span></h1>
+            <div class="title">MARKETING MANAGER</div>
+            <div class="section-title">PROFILE</div>
+            <div class="profile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+            </div>
+            <div class="section-title">WORK EXPERIENCE</div>
+            <div class="work-experience">
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-company">Borcelle Studio</span> - <span class="job-title">Marketing Manager & Specialist</span>
+                        </div>
+                        <div class="job-dates">2030 - PRESENT</div>
+                    </div>
+                    <ul>
+                        <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                        <li>Lead, mentor, and manage a high-performing marketing team, fostering a collaborative and results-driven work environment.</li>
+                        <li>Monitor brand consistency across marketing channels and materials.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-company">Fauget Studio</span> - <span class="job-title">Marketing Manager & Specialist</span>
+                        </div>
+                        <div class="job-dates">2025 - 2029</div>
+                    </div>
+                    <ul>
+                        <li>Create and manage the marketing budget, ensuring efficient allocation of resources and optimizing ROI.</li>
+                        <li>Oversee market research to identify emerging trends, customer needs, and competitive strategies.</li>
+                        <li>Monitor brand consistency across marketing channels and materials.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-company">Studio Showdee</span> - <span class="job-title">Marketing Manager & Specialist</span>
+                        </div>
+                        <div class="job-dates">2024 - 2025</div>
+                    </div>
+                    <ul>
+                        <li>Develop and maintain strong relationships with partners, agencies and vendors to support marketing initiatives.</li>
+                        <li>Monitor and maintain brand consistency across all marketing channels and materials.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-title">REFERENCE</div>
+            <div class="references">
+                <div class="reference">
+                    <div class="ref-name">Estelle Darcy</div>
+                    <div class="ref-title">Wardiere Inc. / CTO</div>
+                    <div class="ref-contact">
+                        Phone: 123-456-7890<br>
+                        Email: hello@reallygreatsite.com
+                    </div>
+                </div>
+                <div class="reference">
+                    <div class="ref-name">Harper Richard</div>
+                    <div class="ref-title">Wardiere Inc. / CEO</div>
+                    <div class="ref-contact">
+                        Phone: 123-456-7890<br>
+                        Email: hello@reallygreatsite.com
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
